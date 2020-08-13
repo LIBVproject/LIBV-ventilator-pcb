@@ -1,0 +1,403 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x09_Counter_Clockwise J1
+U 1 1 5ECE1E05
+P 4200 3050
+F 0 "J1" H 4250 3667 50  0000 C CNN
+F 1 "From_Main" H 4250 3576 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Vertical" H 4200 3050 50  0001 C CNN
+F 3 "~" H 4200 3050 50  0001 C CNN
+	1    4200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:VCC_1 #SUPPLY01
+U 1 1 5ECE2D8C
+P 3900 2600
+F 0 "#SUPPLY01" H 3950 2600 45  0001 L BNN
+F 1 "VCC_1" H 3900 2770 45  0000 C CNN
+F 2 "XXX-00000" H 3900 2781 60  0001 C CNN
+F 3 "" H 3900 2600 60  0001 C CNN
+	1    3900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:VCC_2 #SUPPLY02
+U 1 1 5ECE3385
+P 4600 2600
+F 0 "#SUPPLY02" H 4650 2600 45  0001 L BNN
+F 1 "VCC_2" H 4600 2770 45  0000 C CNN
+F 2 "XXX-00000" H 4600 2781 60  0001 C CNN
+F 3 "" H 4600 2600 60  0001 C CNN
+	1    4600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2600 3900 2650
+Wire Wire Line
+	3900 2650 4000 2650
+Wire Wire Line
+	4500 2650 4600 2650
+Wire Wire Line
+	4600 2650 4600 2600
+$Comp
+L power:GND #PWR02
+U 1 1 5ECE407B
+P 4850 2600
+F 0 "#PWR02" H 4850 2350 50  0001 C CNN
+F 1 "GND" H 4855 2427 50  0000 C CNN
+F 2 "" H 4850 2600 50  0001 C CNN
+F 3 "" H 4850 2600 50  0001 C CNN
+	1    4850 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 2600 4850 2750
+Wire Wire Line
+	4850 2750 4500 2750
+$Comp
+L power:GND #PWR01
+U 1 1 5ECE472F
+P 3650 2600
+F 0 "#PWR01" H 3650 2350 50  0001 C CNN
+F 1 "GND" H 3655 2427 50  0000 C CNN
+F 2 "" H 3650 2600 50  0001 C CNN
+F 3 "" H 3650 2600 50  0001 C CNN
+	1    3650 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 2600 3650 2750
+Wire Wire Line
+	3650 2750 4000 2750
+Text Label 3650 2850 0    50   ~ 0
+Breathe
+Text Label 3650 2950 0    50   ~ 0
+LED
+Text Label 3650 3050 0    50   ~ 0
+Buzzer+
+Text Label 3650 3150 0    50   ~ 0
+Buzzer-
+Text Label 3650 3250 0    50   ~ 0
+Silence
+Text Label 3650 3350 0    50   ~ 0
+Set
+Text Label 3650 3450 0    50   ~ 0
+Cancel
+Text Label 4850 2850 2    50   ~ 0
+I2C_SDA
+Text Label 4850 2950 2    50   ~ 0
+I2C_SCL
+Text Label 4850 3050 2    50   ~ 0
+CLK_RO
+Text Label 4850 3150 2    50   ~ 0
+DT_RO
+Text Label 4850 3250 2    50   ~ 0
+SW_RO
+Text Label 4850 3350 2    50   ~ 0
+Select
+Text Label 4850 3450 2    50   ~ 0
+ON_OFF
+Wire Wire Line
+	4850 3450 4500 3450
+Wire Wire Line
+	4500 3350 4850 3350
+Wire Wire Line
+	4850 3250 4500 3250
+Wire Wire Line
+	4500 3150 4850 3150
+Wire Wire Line
+	4850 3050 4500 3050
+Wire Wire Line
+	4500 2950 4850 2950
+Wire Wire Line
+	4850 2850 4500 2850
+Wire Wire Line
+	3650 2850 4000 2850
+Wire Wire Line
+	3650 2950 4000 2950
+Wire Wire Line
+	3650 3050 4000 3050
+Wire Wire Line
+	3650 3150 4000 3150
+Wire Wire Line
+	3650 3250 4000 3250
+Wire Wire Line
+	3650 3350 4000 3350
+Wire Wire Line
+	3650 3450 4000 3450
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5ECF7ECC
+P 6200 2800
+F 0 "J3" H 6280 2792 50  0000 L CNN
+F 1 "I2C" H 6280 2701 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 6200 2800 50  0001 C CNN
+F 3 "~" H 6200 2800 50  0001 C CNN
+	1    6200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5ECF8318
+P 5950 2650
+F 0 "#PWR04" H 5950 2400 50  0001 C CNN
+F 1 "GND" H 5955 2477 50  0000 C CNN
+F 2 "" H 5950 2650 50  0001 C CNN
+F 3 "" H 5950 2650 50  0001 C CNN
+	1    5950 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:VCC_2 #SUPPLY03
+U 1 1 5ECF89CB
+P 5700 2650
+F 0 "#SUPPLY03" H 5750 2650 45  0001 L BNN
+F 1 "VCC_2" H 5700 2820 45  0000 C CNN
+F 2 "XXX-00000" H 5700 2831 60  0001 C CNN
+F 3 "" H 5700 2650 60  0001 C CNN
+	1    5700 2650
+	1    0    0    -1  
+$EndComp
+Text Label 5650 2900 0    50   ~ 0
+I2C_SDA
+Text Label 5650 3000 0    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	5650 3000 6000 3000
+Wire Wire Line
+	6000 2900 5650 2900
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 5ECFB280
+P 7050 2800
+F 0 "J5" H 7130 2792 50  0000 L CNN
+F 1 "I2C" H 7130 2701 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 7050 2800 50  0001 C CNN
+F 3 "~" H 7050 2800 50  0001 C CNN
+	1    7050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5ECFCA27
+P 6250 3750
+F 0 "J4" H 6330 3742 50  0000 L CNN
+F 1 "Buzzer" H 6330 3651 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 6250 3750 50  0001 C CNN
+F 3 "~" H 6250 3750 50  0001 C CNN
+	1    6250 3750
+	1    0    0    -1  
+$EndComp
+Text Label 5700 3750 0    50   ~ 0
+Buzzer+
+Text Label 5700 3850 0    50   ~ 0
+Buzzer-
+Wire Wire Line
+	5700 3850 6050 3850
+Wire Wire Line
+	6050 3750 5700 3750
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 5ED010FD
+P 6000 4900
+F 0 "J2" H 6080 4892 50  0000 L CNN
+F 1 "Button" H 6080 4801 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B8B-PH-K_1x08_P2.00mm_Vertical" H 6000 4900 50  0001 C CNN
+F 3 "~" H 6000 4900 50  0001 C CNN
+	1    6000 4900
+	1    0    0    -1  
+$EndComp
+Text Label 5450 4600 0    50   ~ 0
+ON_OFF
+Text Label 5450 4700 0    50   ~ 0
+Silence
+Text Label 5450 4800 0    50   ~ 0
+Select
+Text Label 5450 4900 0    50   ~ 0
+Cancel
+Text Label 5450 5000 0    50   ~ 0
+Set
+Text Label 5450 5100 0    50   ~ 0
+Breathe
+Wire Wire Line
+	5450 5100 5800 5100
+Wire Wire Line
+	5800 5000 5450 5000
+Wire Wire Line
+	5450 4900 5800 4900
+Wire Wire Line
+	5800 4800 5450 4800
+Wire Wire Line
+	5450 4700 5800 4700
+Wire Wire Line
+	5800 4600 5450 4600
+$Comp
+L power:GND #PWR03
+U 1 1 5ED05B71
+P 5750 5350
+F 0 "#PWR03" H 5750 5100 50  0001 C CNN
+F 1 "GND" H 5755 5177 50  0000 C CNN
+F 2 "" H 5750 5350 50  0001 C CNN
+F 3 "" H 5750 5350 50  0001 C CNN
+	1    5750 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5350 5750 5300
+Wire Wire Line
+	5750 5300 5800 5300
+Text Label 6700 4750 0    50   ~ 0
+CLK_RO
+Text Label 6700 4850 0    50   ~ 0
+DT_RO
+Text Label 6700 4950 0    50   ~ 0
+SW_RO
+Wire Wire Line
+	6700 4950 7050 4950
+Wire Wire Line
+	7050 4850 6700 4850
+Wire Wire Line
+	6700 4750 7050 4750
+Wire Wire Line
+	5750 5300 5750 5200
+Wire Wire Line
+	5750 5200 5800 5200
+Connection ~ 5750 5300
+$Comp
+L SparkFun-PowerSymbols:VCC_1 #SUPPLY05
+U 1 1 5ED0DC6A
+P 7000 4600
+F 0 "#SUPPLY05" H 7050 4600 45  0001 L BNN
+F 1 "VCC_1" H 7000 4770 45  0000 C CNN
+F 2 "XXX-00000" H 7000 4781 60  0001 C CNN
+F 3 "" H 7000 4600 60  0001 C CNN
+	1    7000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5ED0DF7D
+P 7000 5200
+F 0 "#PWR07" H 7000 4950 50  0001 C CNN
+F 1 "GND" H 7005 5027 50  0000 C CNN
+F 2 "" H 7000 5200 50  0001 C CNN
+F 3 "" H 7000 5200 50  0001 C CNN
+	1    7000 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 5200 7000 5150
+Wire Wire Line
+	7000 5050 7050 5050
+Wire Wire Line
+	7000 4600 7000 4650
+Wire Wire Line
+	7000 4650 7050 4650
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5ED100C5
+P 7150 3750
+F 0 "J6" H 7230 3742 50  0000 L CNN
+F 1 "LED" H 7230 3651 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 7150 3750 50  0001 C CNN
+F 3 "~" H 7150 3750 50  0001 C CNN
+	1    7150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5ED1040C
+P 6900 3900
+F 0 "#PWR06" H 6900 3650 50  0001 C CNN
+F 1 "GND" H 6905 3727 50  0000 C CNN
+F 2 "" H 6900 3900 50  0001 C CNN
+F 3 "" H 6900 3900 50  0001 C CNN
+	1    6900 3900
+	1    0    0    -1  
+$EndComp
+Text Label 6750 3750 0    50   ~ 0
+LED
+Wire Wire Line
+	6750 3750 6950 3750
+Wire Wire Line
+	6950 3850 6900 3850
+Wire Wire Line
+	6900 3850 6900 3900
+$Comp
+L Connector_Generic:Conn_01x06 J7
+U 1 1 5ED19453
+P 7250 4850
+F 0 "J7" H 7330 4842 50  0000 L CNN
+F 1 "Rotary" H 7330 4751 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical" H 7250 4850 50  0001 C CNN
+F 3 "~" H 7250 4850 50  0001 C CNN
+	1    7250 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 5150 7000 5150
+Wire Wire Line
+	7000 5050 7000 5150
+Connection ~ 7000 5150
+Wire Wire Line
+	5700 2800 5700 2650
+Wire Wire Line
+	5700 2800 6000 2800
+Wire Wire Line
+	5950 2650 5950 2700
+Wire Wire Line
+	5950 2700 6000 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5ED2F665
+P 6800 2650
+F 0 "#PWR?" H 6800 2400 50  0001 C CNN
+F 1 "GND" H 6805 2477 50  0000 C CNN
+F 2 "" H 6800 2650 50  0001 C CNN
+F 3 "" H 6800 2650 50  0001 C CNN
+	1    6800 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L SparkFun-PowerSymbols:VCC_2 #SUPPLY?
+U 1 1 5ED2F66F
+P 6550 2650
+F 0 "#SUPPLY?" H 6600 2650 45  0001 L BNN
+F 1 "VCC_2" H 6550 2820 45  0000 C CNN
+F 2 "XXX-00000" H 6550 2831 60  0001 C CNN
+F 3 "" H 6550 2650 60  0001 C CNN
+	1    6550 2650
+	1    0    0    -1  
+$EndComp
+Text Label 6500 2900 0    50   ~ 0
+I2C_SDA
+Text Label 6500 3000 0    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	6500 3000 6850 3000
+Wire Wire Line
+	6850 2900 6500 2900
+Wire Wire Line
+	6550 2800 6550 2650
+Wire Wire Line
+	6550 2800 6850 2800
+Wire Wire Line
+	6800 2650 6800 2700
+Wire Wire Line
+	6800 2700 6850 2700
+$EndSCHEMATC

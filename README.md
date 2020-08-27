@@ -8,6 +8,23 @@ Our Challenge: Design and Engineer an Open Source, low cost (sub $150) ventilato
 Who we are: A Collective of Engineers, Medics and Scientists from across the world, centred around a hub in Phnom Penh, Cambodia.
 Help Us: We need Volunteers, a Community of Contributors and Donors to join us and help us deliver our vision.
 
-# LIBV Electronics PCB
+## LIBV Electronics PCB
 
 The LIBV electronics are based on an Arduino Nano (Atmega328) architecture.
+
+### Circuit Digram
+
+<p align="center">
+  <img width=auto height=auto src="https://github.com/LIBVproject/LIBV-ventilator-pcb/blob/master/LIBV-circuit-diagram.png">
+</p>
+
+### Printed PCB
+
+<p align="center">
+  <img width=auto height=auto src="https://github.com/LIBVproject/LIBV-ventilator-pcb/blob/master/LIBV-pcb.jpg">
+</p>
+
+
+<p align="center">
+  <img width=auto height=auto src="https://github.com/LIBVproject/LIBV-ventilator-pcb/blob/master/LIBV-pcb-wired.jpg">
+</p>
